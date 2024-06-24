@@ -1,32 +1,30 @@
 {
-  "name": "t3md/femanagerextended",
+  "name": "t3ac/femanagerextended",
+  "type": "typo3-cms-extension",
   "description": "Extension to TYPO3 extension femanager",
-  "version": "3.0.0",
-  "keywords": [
-    "typo3",
-    "form",
-    "femanager",
-    "fe_users",
-    "registration"
-  ],
-  "homepage": "https://forge.typo3.org/projects/extension-femanager",
   "authors": [
     {
-      "name": "Alex Kellner",
-      "email": "alexander.kellner@in2code.de"
+      "name": "Michael Lang",
+      "role": "Developer",
+      "email": "michael.lang@h-da.de"
     }
   ],
-  "type": "typo3-cms-extension",
-  "license": "GPL-3.0",
+  "license": ["GPL-2.0-or-later"],
+  "keywords": [
+    "TYPO3",
+    "extension"
+  ],
   "require": {
     "typo3/cms-core": "^11.5"
   },
   "autoload": {
     "psr-4": {
-      "In2code\\Femanagerextended\\": "Classes"
+        "T3ac\\T3upImage\\": "Classes"
     }
   },
-  "scripts": {
-    "test:php:lint": "find *.php Classes Configuration Tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "t3up_image"
+    }
   }
 }
