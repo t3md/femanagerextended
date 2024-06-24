@@ -24,7 +24,7 @@
   },
   "extra": {
     "typo3/cms": {
-      "extension-key": "t3up_image"
+      "extension-key": "femanagerextended"
     }
   }
 }
