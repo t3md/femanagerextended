@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-30T10:52:26Z" product-name="femanagerextended">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_femanagerextended_domain_model_user">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="tx_femanagerextended_domain_model_user.twitter_id">
+				<source>Twitter Id</source>
+			</trans-unit>
+			<trans-unit id="tx_femanagerextended_domain_model_user.skype_id">
+				<source>Skype Id</source>
+			</trans-unit>
+			
+			<trans-unit id="fe_users.tab">
+				<source>User</source>
+			</trans-unit>
+            <trans-unit id="freigabe">
+                <source>Unblocking</source>
+            </trans-unit>
+            <trans-unit id="profile">
+                <source>Profile</source>
+            </trans-unit>     
+            <trans-unit id="firmenzusatz">
+                <source>Extending Title</source>
+            </trans-unit>
+            <trans-unit id="gruendungsjahr">
+                <source>founding year</source>
+            </trans-unit>
+            <trans-unit id="ansprechpartner">
+                <source>Unblocking</source>
+            </trans-unit>
+            <trans-unit id="unterrichtsformen">
+                <source>Profile</source>
+            </trans-unit>     
+            <trans-unit id="sonstigemerkmale">
+                <source>Other specifications</source>
+            </trans-unit>
+            <trans-unit id="beratungszeiten">
+                <source>consulting hours</source>
+            </trans-unit>  
+            <trans-unit id="gesellschaftsform">
+                <source>corporate form</source>
+            </trans-unit>     
+            <trans-unit id="geschaeftsfuehrer">
+                <source>managing Director</source>
+            </trans-unit>
+            <trans-unit id="hauptzielgruppen">
+                <source>all target groups</source>
+            </trans-unit>  
+            <trans-unit id="feuserext.telephone">
+                <source>Phone</source>
+            </trans-unit>  
+            <trans-unit id="feuserext.fax">
+                <source>Fax</source>
+            </trans-unit> 
+              <trans-unit id="feuserext.all">
+                <source>All</source>
+            </trans-unit> 
+              <trans-unit id="feuserext.reset">
+                <source>Reset</source>
+            </trans-unit> 
+              <trans-unit id="feuserext.email">
+                <source>E-Mail</source>
+            </trans-unit>             
+             <trans-unit id="feuserext.www">
+                <source>Website</source>
+            </trans-unit>   
+            
+        </body>
+        
+    </file>
+</xliff>

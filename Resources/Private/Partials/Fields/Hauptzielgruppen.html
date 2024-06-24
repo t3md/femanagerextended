@@ -1,0 +1,18 @@
+{namespace femanager=In2code\Femanager\ViewHelpers}
+
+<div class="femanager_fieldset femanager_hauptzielgruppen  form-group d-flex mb-2 w-100">
+	<label for="femanager_field_hauptzielgruppen" class="col-12 col-md-2 control-label">
+		<f:translate key="tx_feuserext_domain_model_user.hauptzielgruppen" extensionName="feuserext">Hauptzielgruppen</f:translate>
+		<f:if condition="{femanager:Validation.IsRequiredField(fieldName:'hauptzielgruppen')}">
+			<span>*</span>
+		</f:if>
+	</label>
+	
+	<div class="col-12 col-md-10">
+		<femanager:form.textfield
+				id="hauptzielgruppen"
+				property="hauptzielgruppen"
+				class="form-control"
+				additionalAttributes="{femanager:Validation.FormValidationData(settings:settings,fieldName:'hauptzielgruppen')}" />
+	</div>
+</div>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-30T10:52:26Z" product-name="femanagerextended">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_femanagerextended_domain_model_user">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="tx_femanagerextended_domain_model_user.twitter_id">
+				<source>twitterId</source>
+			</trans-unit>
+			<trans-unit id="tx_femanagerextended_domain_model_user.skype_id">
+				<source>skypeId</source>
+			</trans-unit>
+			<trans-unit id="tx_femanagerextended_domain_model_user.firmenzusatz">
+				<source>Firmenzusatz</source>
+			</trans-unit>
+			<trans-unit id="tx_femanagerextended_domain_model_user.ansprechpartner">
+				<source>Ansprechpartner</source>
+			</trans-unit>			
+			<trans-unit id="tx_femanagerextended_domain_model_user.beratungszeiten">
+				<source>Beratungszeiten</source>
+			</trans-unit>		
+			<trans-unit id="tx_femanagerextended_domain_model_user.geschaeftsfuehrer">
+				<source>Geschaeftsführer</source>
+			</trans-unit>		
+			<trans-unit id="tx_femanagerextended_domain_model_user.gruendungsjahr">
+				<source>Gründungsjahr</source>
+			</trans-unit>								
+			<trans-unit id="tx_femanagerextended_domain_model_user.hauptzielgruppen">
+				<source>Hauptzielgruppen</source>
+			</trans-unit>								
+			<trans-unit id="tx_femanagerextended_domain_model_user.sonstigemerkmale">
+				<source>Sonstige Merkmale</source>
+			</trans-unit>									
+			<trans-unit id="tx_femanagerextended_domain_model_user.unterrichtsformen">
+				<source>Unterrichtsformen</source>
+			</trans-unit>
+			<trans-unit id="tx_femanagerextended_domain_model_user.profile">
+				<source>Profil</source>
+			</trans-unit>
+			<trans-unit id="tx_femanagerextended_domain_model_user.gesellschaftsform">
+				<source>Gesellschaftsform</source>
+			</trans-unit>						
+			<trans-unit id="reset">
+				<source>Zurücksetzen</source>
+			</trans-unit>						
+						
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+										
+		</body>
+	</file>
+</xliff>

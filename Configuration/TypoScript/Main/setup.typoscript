@@ -1,0 +1,6 @@
+page.includeCSS{
+    femanagerextended                         = EXT:femanagerextended/Resources/Public/Sass/_femanagerextended.scss
+    femanagerextended.outputStyle             = compressed  
+    femanagerextended.linenumber              = true    
+    femanagerextended.forceOnTop              = 1
+}

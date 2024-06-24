@@ -1,0 +1,67 @@
+{namespace femanager=In2code\Femanager\ViewHelpers}
+<f:layout name="Default" />
+
+	User / List
+
+	This Template is responsible for the femanager list view
+
+<f:section name="main">
+
+	<div class="femanager_list">
+	
+	
+	
+	
+	
+	
+	
+		<f:render partial="Misc/FlashMessages" arguments="{_all}" />
+
+		<f:render partial="User/Searchform" arguments="{_all}" />
+
+		<f:if condition="{users}">
+			<f:then>
+				<ul class="femanager_list">
+				    <f:for each="{pagination.paginator.paginatedItems}" as="user" iteration="iterator">		
+						<li class="row">		
+							<div class="trainerinfo col-9" >
+						   		<f:link.action action="show" arguments="{user:user}">
+							   		<p class="h4">{user.company}<p>
+							    	 	<f:if condition="{user.firmenzusatz}">
+							    		{user.firmenzusatz}<br />
+							    		</f:if>	
+							    		{user.zip} {user.city}
+									</p>
+								</f:link.action>		   		   				    
+						   	</div>
+							
+							<div class="trainerimage col-3">
+								<f:for each="{user.image}" as="image">
+									<f:link.action action="show" arguments="{user:user}">
+										<f:image image="{image}" alt="{user.company}" width="200m"  height="200c"  class="mx-auto media-object" />
+									</f:link.action>
+								</f:for>
+							</div>
+						</li>
+			    	</f:for>
+				</ul>
+			</ul>
+				
+			<f:render partial="Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator, search: search, actionName: 'list'}"/>	
+
+				
+			</f:then>
+			
+
+			<f:else>
+				<div class="femanager_note">
+					<f:translate key="noRecordsFound" />
+				</div>
+			</f:else>
+		</f:if>
+	</div>
+</f:section>
+
+<f:section name="debug">
+	      <f:debug>{_all}</f:debug>
+ </f:section>

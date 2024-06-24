@@ -1,0 +1,20 @@
+{namespace femanager=In2code\Femanager\ViewHelpers}
+
+<div class="femanager_fieldset femanager_gruendungsjahr  form-group d-flex mb-2 w-100">
+	<label for="femanager_field_gruendungsjahr" class="col-12 col-sm-2 control-label">
+		<f:translate key="tx_feuserext_domain_model_user.gruendungsjahr"  extensionName="femanagerextended" >Gründungsjahr</f:translate>
+		<f:if condition="{femanager:Validation.IsRequiredField(fieldName:'gruendungsjahr')}">
+			<span>*</span>
+		</f:if>
+	</label>
+	<div class="col-12 col-sm-10">
+		<femanager:form.textfield
+			id="gruendungsjahr"
+			property="gruendungsjahr"
+			class="form-control"
+			placeholder="{f:translate(key:'tx_feuserext_domain_model_user.gruendungsjahr.placeholder')}"
+			title="{f:translate(key:'tx_feuserext_domain_model_user.gruendungsjahr.hint')}"
+			value="{user.gruendungsjahr -> f:format.date(format:'{f:translate(key:\'tx_femanager_domain_model_user.dateFormat\')}')}"
+			additionalAttributes="{femanager:Validation.FormValidationData(settings:settings,fieldName:'gruendungsjahr')}" />
+	</div>
+</div>

@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:femanager="In2code\Femanager\ViewHelpers">
+      
+
+	<f:if condition="{settings.list.filterActivate}">
+		<div class="femanager_list_searchform mb-3">
+			<f:form name="filter" class="form-horizontal d-flex" object="{filter}">
+				<div class="femanager_fieldsetcontrol-group w-auto me-2">
+					<label for="searchword" class="control-label d-none">
+						<f:translate key="FilterLabel" />
+					</label>
+	
+						<femanager:form.textfield
+								id="searchword"
+								property="searchword"
+								placeholder="{f:translate(key:'FilterPlaceholder')}"
+								class="form-control me-2" />
+				</div>
+	
+				<div class="femanager_fieldset femanager_submit control-group col-auto ">
+					<div class="controls">
+						<f:form.submit value="{f:translate(key:'FilterSubmit')}" class="btn btn-secondary" />
+						
+			                <f:link.page pageUid="{Pid}" class="btn btn-light ml-1 ms-1" title="zurücksetzen">
+			               		<f:translate key="LLL:EXT:femanagerextended/Resources/Private/Language/locallang.xlf:reset"/>
+			                </f:link.page>
+					</div>
+				</div>
+			</f:form>
+		</div>
+	</f:if>
+</html>
+

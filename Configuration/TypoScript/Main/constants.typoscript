@@ -1,0 +1,10 @@
+plugin.tx_femanager {
+  view {
+    # cat=plugin.tx_femanager/file; type=string; label= Path to template root (FE)
+    templateRootPath = EXT:femanagerextended/Resources/Private/Templates/
+
+    # cat=plugin.tx_femanager/file; type=string; label= Path to template partials (FE)
+    partialRootPath = EXT:femanagerextended/Resources/Private/Partials/
+
+  }
+}

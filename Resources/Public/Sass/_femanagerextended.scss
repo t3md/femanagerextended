@@ -1,0 +1,32 @@
+
+@import '../../../../t3up/Resources/Public/Sass/_grid.scss';
+
+ul.femanager_list{			    padding: 0;
+	
+	> li 						{background-color: rgba(255, 255, 255, 0.9);border: 1px solid $gray-300;	transition: all ease;}
+	> li:hover      			{background-color: rgba(255, 255, 255, 1)}
+	> li .trainerinfo			{padding: 1vw 1vw 1vw 2vw ;}
+	> li .trainerinfo p			{margin: 0;}
+	> li .trainerinfo p.h4	    {margin: 0 0 .25vw;}	
+	
+	> li .trainerimage          {padding: 1vw;}		
+	> li .trainerimage  img	    {height: auto; width: auto; }			
+}
+.tx-femanager .femanager_detail {background-color: #fff; border: 1px solid $gray-300;; border-radius: $v2; position: relative;  padding: $v3 $v4;  margin-bottom: $v4;  border: 1px solid transparent;  border-radius: $v1;
+	
+	label.trainerlabel			{width: 6rem; }
+	.infoblock {
+		label.col-sm-3          {flex: 0 0 25%; max-width: 25%;}
+		> *                     {margin-bottom: .5rem; }
+		
+	}
+	.btn   						{ margin-left: $v2;}
+	.btn a 						{color: #fff;}
+
+
+
+
+
+
+
+}

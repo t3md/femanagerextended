@@ -1,0 +1,18 @@
+{namespace femanager=In2code\Femanager\ViewHelpers}
+
+<div class="femanager_fieldset femanager_sonstigemerkmale  form-group d-flex mb-2 w-100">
+	<label for="femanager_field_sonstigemerkmale" class="col-12 col-md-2 control-label">
+		<f:translate key="tx_feuserext_domain_model_user.sonstigemerkmale" extensionName="feuserext">Sonstige Merkmale</f:translate>
+		<f:if condition="{femanager:Validation.IsRequiredField(fieldName:'sonstigemerkmale')}">
+			<span>*</span>
+		</f:if>
+	</label>
+	
+	<div class="col-12 col-md-10">
+		<femanager:form.textfield
+				id="sonstigemerkmale"
+				property="sonstigemerkmale"
+				class="form-control"
+				additionalAttributes="{femanager:Validation.FormValidationData(settings:settings,fieldName:'sonstigemerkmale')}" />
+	</div>
+</div>
