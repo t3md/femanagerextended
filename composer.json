@@ -1,25 +1,28 @@
 {
-  "name": "t3ac/femanagerextended",
-  "type": "typo3-cms-extension",
-  "description": "Extension to TYPO3 extension femanager",
+  "name": "t3md/femanagerextended",
+  "description": "Example addon extension to TYPO3 extension femanager",
+  "keywords": [
+    "typo3",
+    "form",
+    "femanager",
+    "fe_users",
+    "registration"
+  ],
+  "homepage": "https://forge.typo3.org/projects/extension-femanager",
   "authors": [
     {
-      "name": "Michael Lang",
-      "role": "Developer",
-      "email": "michael.lang@h-da.de"
+      "name": "Alex Kellner",
+      "email": "alexander.kellner@in2code.de"
     }
   ],
-  "license": ["GPL-2.0-or-later"],
-  "keywords": [
-    "TYPO3",
-    "extension"
-  ],
+  "type": "typo3-cms-extension",
+  "license": "GPL-3.0",
   "require": {
     "typo3/cms-core": "^11.5"
   },
   "autoload": {
     "psr-4": {
-        "T3ac\\T3upImage\\": "Classes"
+      "In2code\\Femanagerextended\\": "Classes"
     }
   },
   "extra": {

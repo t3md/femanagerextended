@@ -1,3 +1,24 @@
+plugin.tx_femanager {
+  view {
+    partialRootPaths {
+      1 = EXT:femanagerextended/Resources/Private/Partials/
+    }
+  }
+  _LOCAL_LANG {
+    default.validationErrorCustom = "in2code" is missing
+    de.validationErrorCustom = "in2code" wird erwartet
+  }
+  settings {
+    userCategoriesRoot = 1
+    new.validation {
+      skypeId.required = 1
+      twitterId.required = 0
+
+      # If set username string must include "in2code"
+      username.custom = in2code
+    }
+  }
+}
 page.includeCSS{
     femanagerextended                         = EXT:femanagerextended/Resources/Public/Sass/_femanagerextended.scss
     femanagerextended.outputStyle             = compressed  

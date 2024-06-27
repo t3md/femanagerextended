@@ -25,6 +25,20 @@
                 'eval' => 'trim',
             ],
         ],
+        'user_categories' => [
+            'exclude' => 1,
+            'label' => 'LLL:EXT:femanagerextended/Resources/Private/Language/locallang_db.xlf:' .
+                'tx_femanagerextended_domain_model_user.user_categories',
+            'config' => [
+                'type' => 'category',
+                'relationship' => 'oneToMany',
+                'treeConfig' => [
+                    'startingPoints' => 1,
+                ],
+                'minitems' => 0,
+                'maxitems' => 99,
+            ],
+        ],
         'freigabe' => [
             'exclude' => 1,
             'label' => 'LLL:EXT:femanagerextended/Resources/Private/Language/locallang_db.xlf:' .
@@ -131,7 +145,7 @@
         ],
         
     ];
-    $fields = 'crdate, tstamp, freigabe, firmenzusatz, gruendungsjahr, ansprechpartner, unterrichtsformen, sonstigemerkmale, beratungszeiten, gesellschaftsform, geschaeftsfuehrer, hauptzielgruppen, twitter_id, skype_id';
+    $fields = 'crdate, tstamp, freigabe, firmenzusatz, gruendungsjahr, ansprechpartner, unterrichtsformen, sonstigemerkmale, beratungszeiten, gesellschaftsform, geschaeftsfuehrer, hauptzielgruppen, twitter_id, skype_id, user_categories';
     
     
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('fe_users', $feUsersColumns);

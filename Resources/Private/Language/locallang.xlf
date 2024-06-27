@@ -13,6 +13,9 @@
 			<trans-unit id="tx_femanagerextended_domain_model_user.skype_id">
 				<source>skypeId</source>
 			</trans-unit>
+			<trans-unit id="tx_femanagerextended_domain_model_user.user_categories">
+				<source>User Categories</source>
+			</trans-unit>
 			<trans-unit id="tx_femanagerextended_domain_model_user.firmenzusatz">
 				<source>Firmenzusatz</source>
 			</trans-unit>
@@ -45,19 +48,7 @@
 			</trans-unit>						
 			<trans-unit id="reset">
 				<source>Zurücksetzen</source>
-			</trans-unit>						
-						
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-										
+			</trans-unit>				
 		</body>
 	</file>
 </xliff>

@@ -1,5 +1,11 @@
 <?php
+
+declare(strict_types=1);
+
 namespace In2code\Femanagerextended\Domain\Model;
+
+use TYPO3\CMS\Extbase\Domain\Model\Category;
+use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 class User extends \In2code\Femanager\Domain\Model\User
 {
@@ -9,91 +15,91 @@ class User extends \In2code\Femanager\Domain\Model\User
      *
      * @var string
      */
-    protected $twitterId;
+    protected string $twitterId;
 
     /**
      * skypeId
      *
      * @var string
      */
-    protected $skypeId;
+    protected string $skypeId;
     
     /**
      * freigabe
      *
      * @var \boolean
      */
-    protected $freigabe;
+    protected boolean $freigabe;
     
     /**
      * gruendungsjahr
      *
      * @var \string
      */
-    protected $gruendungsjahr;
+    protected string $gruendungsjahr;
     
     /**
      * unterrichtsformen
      *
      * @var \string
      */
-    protected $unterrichtsformen;
+    protected string $unterrichtsformen;
     
     /**
      * ansprechpartner
      *
      * @var \string
      */
-    protected $ansprechpartner;
+    protected string $ansprechpartner;
     
     /**
      * firmenzusatz
      *
      * @var \string
      */
-    protected $firmenzusatz;
+    protected string $firmenzusatz;
     
     /**
      * sonstigemerkmale
      *
      * @var \string
      */
-    protected $sonstigemerkmale;
+    protected string $sonstigemerkmale;
     
     /**
      * beratungszeiten
      *
      * @var \string
      */
-    protected $beratungszeiten;
+    protected string $beratungszeiten;
     
     /**
      * art
      *
      * @var \string
      */
-    protected $art;
+    protected string $art;
     
     /**
      * hauptzielgruppen
      *
      * @var \string
      */
-    protected $hauptzielgruppen;
+    protected string $hauptzielgruppen;
     
     /**
      * dozenten
      *
      * @var \string
      */
-    protected $dozenten;
+    protected string $dozenten;
     
     /**
      * gesellschaftsform
      *
      * @var \string
      */
-    protected $gesellschaftsform;
+    protected string $gesellschaftsform;
     
     
     /**
@@ -101,7 +107,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      *
      * @var \string
      */
-    protected $geschaeftsfuehrer;
+    protected string $geschaeftsfuehrer;
     
     /**
      * profile
@@ -110,6 +116,17 @@ class User extends \In2code\Femanager\Domain\Model\User
      */
     protected $profile;
     
+    /**
+     * @var ObjectStorage<Category>
+     */
+    protected ObjectStorage $userCategories;
+
+    public function __construct($username = '', $password = '')
+    {
+        parent::__construct($username, $password);
+        $this->userCategories = new ObjectStorage();
+    }
+
 
     /**
      * Returns the twitterId
@@ -127,7 +144,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param string $twitterId
      * @return void
      */
-    public function setTwitterId($twitterId): void
+    public function setTwitterId(string $twitterId): void
     {
         $this->twitterId = $twitterId;
     }
@@ -148,7 +165,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param string $skypeId
      * @return void
      */
-    public function setSkypeId($skypeId): void
+    public function setSkypeId(string $skypeId): void
     {
         $this->skypeId = $skypeId;
     }
@@ -158,7 +175,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \boolean $freigabe
      * @return void
      */
-    public function setFreigabe($freigabe) {
+    public function setFreigabe(string $freigabe) {
         $this->freigabe = $freigabe;
     }
     
@@ -188,7 +205,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $gruendungsjahr
      * @return void
      */
-    public function setGruendungsjahr($gruendungsjahr) {
+    public function setGruendungsjahr(string $gruendungsjahr) {
         $this->gruendungsjahr = $gruendungsjahr;
     }
     
@@ -207,7 +224,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $unterrichtsformen
      * @return void
      */
-    public function setUnterrichtsformen($unterrichtsformen) {
+    public function setUnterrichtsformen(string $unterrichtsformen) {
         $this->unterrichtsformen = $unterrichtsformen;
     }
     
@@ -226,7 +243,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $ansprechpartner
      * @return void
      */
-    public function setAnsprechpartner($ansprechpartner) {
+    public function setAnsprechpartner(string $ansprechpartner) {
         $this->ansprechpartner = $ansprechpartner;
     }
     
@@ -246,7 +263,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $geschaeftsfuehrer
      * @return void
      */
-    public function setGeschaeftsfuehrer($geschaeftsfuehrer) {
+    public function setGeschaeftsfuehrer(string $geschaeftsfuehrer) {
         $this->geschaeftsfuehrer = $geschaeftsfuehrer;
     }
     
@@ -265,7 +282,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $firmenzusatz
      * @return void
      */
-    public function setFirmenzusatz($firmenzusatz) {
+    public function setFirmenzusatz(string $firmenzusatz) {
         $this->firmenzusatz = $firmenzusatz;
     }
     
@@ -285,7 +302,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $sonstigemerkmale
      * @return void
      */
-    public function setSonstigemerkmale($sonstigemerkmale) {
+    public function setSonstigemerkmale(string $sonstigemerkmale) {
         $this->sonstigemerkmale = $sonstigemerkmale;
     }
     
@@ -304,7 +321,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $beratungszeiten
      * @return void
      */
-    public function setBeratungszeiten($beratungszeiten) {
+    public function setBeratungszeiten(string $beratungszeiten) {
         $this->beratungszeiten = $beratungszeiten;
     }
     
@@ -323,7 +340,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $art
      * @return void
      */
-    public function setArt($art) {
+    public function setArt(string $art) {
         $this->art = $art;
     }
     
@@ -342,7 +359,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $hauptzielgruppen
      * @return void
      */
-    public function setHauptzielgruppen($hauptzielgruppen) {
+    public function setHauptzielgruppen(string $hauptzielgruppen) {
         $this->hauptzielgruppen = $hauptzielgruppen;
     }
     
@@ -361,7 +378,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $dozenten
      * @return void
      */
-    public function setDozenten($dozenten) {
+    public function setDozenten(string $dozenten) {
         $this->dozenten = $dozenten;
     }
     
@@ -381,7 +398,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $gesellschaftsform
      * @return void
      */
-    public function setGesellschaftsform($gesellschaftsform) {
+    public function setGesellschaftsform(string $gesellschaftsform) {
         $this->gesellschaftsform = $gesellschaftsform;
     }
     
@@ -400,15 +417,48 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \string $profile
      * @return void
      */
-    public function setProfile($profile) {
+    public function setProfile(string $profile) {
         $this->profile = $profile;
     }
     
     /**
      * @param string $username
      */
-    public function setUsername($username) {
+    public function setUsername(string $username) {
         $this->username = $username;
     }
-    
+
+    /**
+     * @return ObjectStorage
+     */
+    public function getUserCategories(): ObjectStorage
+    {
+        return $this->userCategories;
+    }
+
+    /**
+     * @param ObjectStorage $userCategories
+     */
+    public function setUserCategories(ObjectStorage $userCategories): void
+    {
+        $this->userCategories = $userCategories;
+    }
+
+    /**
+     * @param Category $category
+     * @return void
+     */
+    public function addUserCategory(Category $category)
+    {
+        $this->userCategories->attach($category);
+    }
+
+    /**
+     * @param Category $category
+     * @return void
+     */
+    public function removeUserCategory(Category $category)
+    {
+        $this->userCategories->detach($category);
+    }
 }
