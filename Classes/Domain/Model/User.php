@@ -29,7 +29,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      *
      * @var \boolean
      */
-    protected boolean $freigabe;
+    protected bool $freigabe;
     
     /**
      * gruendungsjahr
@@ -175,7 +175,7 @@ class User extends \In2code\Femanager\Domain\Model\User
      * @param \boolean $freigabe
      * @return void
      */
-    public function setFreigabe(string $freigabe) {
+    public function setFreigabe(bool $freigabe) {
         $this->freigabe = $freigabe;
     }
     
