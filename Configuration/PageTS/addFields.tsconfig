@@ -3,20 +3,18 @@ tx_femanager	{
         new 	{
 			addFieldOptions {
                 gesellschaftsform 	= Gesellschaftsform
-                geschaeftsfuehrer 	= Geschaeftsführer
+                geschaeftsfuehrer 	= Geschaeftsfuehrer
                 profile				= Profil
                 firmenzusatz		= Firmentitel Zusatz
-                gruendungsjahr		= Gründungsjahr
+                gruendungsjahr		= Gruendungsjahr
                 unterrichtsformen	= Unterrichtsformen
                 ansprechpartner		= Ansprechpartner
                 sonstigemerkmale	= Sonstige Merkmale
                 beratungszeiten		= Beratungszeiten
                 hauptzielgruppen	= Hauptzielgruppen  
-			    twitterId 			= Twitter ID
-			    skypeId 			= Skype ID
-				  twitterId = Twitter ID
-				  skypeId = Skype ID
-				  userCategories = User Categories
+				twitterId           = Twitter ID
+				skypeId             = Skype ID
+				userCategories      = User Categories
             }
         }
         edit < tx_femanager.flexForm.new
