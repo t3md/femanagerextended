@@ -420,13 +420,6 @@ class User extends \In2code\Femanager\Domain\Model\User
     public function setProfile(string $profile) {
         $this->profile = $profile;
     }
-    
-    /**
-     * @param string $username
-     */
-    public function setUsername(string $username) {
-        $this->username = $username;
-    }
 
     /**
      * @return ObjectStorage
