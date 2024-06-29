@@ -5,26 +5,6 @@
     $GLOBALS['TCA']['fe_users']['ctrl']['type'] = 'tx_extbase_type';
     
     $feUsersColumns = [
-        'twitter_id' => [
-            'exclude' => 1,
-            'label' => 'LLL:EXT:femanagerextended/Resources/Private/Language/locallang_db.xlf:' .
-                'tx_femanagerextended_domain_model_user.twitter_id',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim',
-            ],
-        ],
-        'skype_id' => [
-            'exclude' => 1,
-            'label' => 'LLL:EXT:femanagerextended/Resources/Private/Language/locallang_db.xlf:' .
-                'tx_femanagerextended_domain_model_user.skype_id',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim',
-            ],
-        ],
         'user_categories' => [
             'exclude' => 1,
             'label' => 'LLL:EXT:femanagerextended/Resources/Private/Language/locallang_db.xlf:' .
@@ -145,8 +125,7 @@
         ],
         
     ];
-    $fields = 'crdate, tstamp, freigabe, firmenzusatz, gruendungsjahr, ansprechpartner, unterrichtsformen, sonstigemerkmale, beratungszeiten, gesellschaftsform, geschaeftsfuehrer, hauptzielgruppen, twitter_id, skype_id, user_categories';
-    
+    $fields = 'crdate, tstamp, freigabe, firmenzusatz, gruendungsjahr, ansprechpartner, unterrichtsformen, sonstigemerkmale, beratungszeiten, gesellschaftsform, geschaeftsfuehrer, hauptzielgruppen, user_categories';
     
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('fe_users', $feUsersColumns);
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('fe_users', '--div--;LLL:EXT:femanagerextended/Resources/Private/Language/locallang_db.xlf:fe_users.tab, ' . $fields);

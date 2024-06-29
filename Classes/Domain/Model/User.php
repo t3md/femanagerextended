@@ -9,20 +9,6 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 class User extends \In2code\Femanager\Domain\Model\User
 {
-
-    /**
-     * twitterId
-     *
-     * @var string
-     */
-    protected string $twitterId;
-
-    /**
-     * skypeId
-     *
-     * @var string
-     */
-    protected string $skypeId;
     
     /**
      * freigabe
@@ -127,48 +113,6 @@ class User extends \In2code\Femanager\Domain\Model\User
         $this->userCategories = new ObjectStorage();
     }
 
-
-    /**
-     * Returns the twitterId
-     *
-     * @return string $twitterId
-     */
-    public function getTwitterId(): string
-    {
-        return $this->twitterId;
-    }
-
-    /**
-     * Sets the twitterId
-     *
-     * @param string $twitterId
-     * @return void
-     */
-    public function setTwitterId(string $twitterId): void
-    {
-        $this->twitterId = $twitterId;
-    }
-
-    /**
-     * Returns the skypeId
-     *
-     * @return string $skypeId
-     */
-    public function getSkypeId(): string
-    {
-        return $this->skypeId;
-    }
-
-    /**
-     * Sets the skypeId
-     *
-     * @param string $skypeId
-     * @return void
-     */
-    public function setSkypeId(string $skypeId): void
-    {
-        $this->skypeId = $skypeId;
-    }
     /**
      * Sets the freigabe
      *
@@ -188,7 +132,6 @@ class User extends \In2code\Femanager\Domain\Model\User
     public function getFreigabe() {
         return $this->freigabe;
     }
-    
     
     /**
      * Returns the gruendungsjahr
@@ -247,7 +190,6 @@ class User extends \In2code\Femanager\Domain\Model\User
         $this->ansprechpartner = $ansprechpartner;
     }
     
-    
     /**
      * Returns the geschaeftsfuehrer
      *
@@ -285,7 +227,6 @@ class User extends \In2code\Femanager\Domain\Model\User
     public function setFirmenzusatz(string $firmenzusatz) {
         $this->firmenzusatz = $firmenzusatz;
     }
-    
     
     /**
      * Returns the sonstigemerkmale
@@ -381,7 +322,6 @@ class User extends \In2code\Femanager\Domain\Model\User
     public function setDozenten(string $dozenten) {
         $this->dozenten = $dozenten;
     }
-    
     
     /**
      * Returns the gesellschaftsform
