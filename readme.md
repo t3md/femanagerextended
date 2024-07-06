@@ -1,7 +1,7 @@
 # Example addon extension to TYPO3 extension femanager
 
 # Changelog
-
+- 4.0.0 Extended for wbh
 - 3.1.1 Update dev setup
 - 3.1.0 Add Example for using objects
 - 3.0.0 Add compatibility for TYPO3 v11
