@@ -2,8 +2,6 @@
   "name": "t3md/femanagerextended",
   "description": "Example addon extension to TYPO3 extension femanager",
   "keywords": [
-    "typo3",
-    "form",
     "femanager",
     "fe_users",
     "registration"
