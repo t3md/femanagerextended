@@ -1,16 +1,15 @@
 {
   "name": "t3md/femanagerextended",
-  "description": "Example addon extension to TYPO3 extension femanager",
+  "description": "Extend the extension femanager based on Alex Kellner",
   "keywords": [
     "femanager",
     "fe_users",
     "registration"
   ],
-  "homepage": "https://forge.typo3.org/projects/extension-femanager",
   "authors": [
     {
-      "name": "Alex Kellner",
-      "email": "alexander.kellner@in2code.de"
+      "name": "Alex Kellner / Michael Lang",
+      "email": "info@mediadesign-ffm.de"
     }
   ],
   "type": "typo3-cms-extension",
