@@ -27,13 +27,12 @@
 						</p>
 					</div>
 					
-					<f:if condition="{user.beratungszeiten} ||	{user.ansprechpartner} || {user.sonstigemerkmale}  || {user.dozenten} || {user.hauptzielgruppen} || {user.profile}" >
+					<f:if condition="{user.beratungszeiten} ||	{user.ansprechpartner} || {user.sonstigemerkmale} || {user.hauptzielgruppen} || {user.profile}" >
 						<div class="col-12 mb-3">
 							<hr class="trainer">
 							<div class="row m-0 infoblock">
 								<f:if condition="{user.beratungszeiten}"><label class="col-12 col-sm-3 px-0"><f:translate key="tx_feuserext_domain_model_user.beratungszeiten" extensionName="femanagerextended">Beratungszeiten</f:translate></label><div class="feperson col-12 col-sm-9">{user.beratungszeiten}</div></f:if>		
 								<f:if condition="{user.ansprechpartner}"><label class="col-12 col-sm-3 px-0"><f:translate key="tx_feuserext_domain_model_user.ansprechpartner" extensionName="femanagerextended">Ansprechpartner</f:translate></label><div class="feperson col-12 col-sm-9">{user.ansprechpartner}</div></f:if>
-								<f:if condition="{user.dozenten}"><label class="col-12 col-sm-3 px-0"><f:translate key="tx_feuserext_domain_model_user.dozenten" extensionName="femanagerextended">Dozenten</f:translate></label><div class="feperson col-12 col-sm-9">{user.dozenten}</div></f:if>
 								<f:if condition="{user.sonstigemerkmale}"><label class="col-12 col-sm-3 px-0"><f:translate key="tx_feuserext_domain_model_user.sonstigemerkmale" extensionName="femanagerextended">Sonstige Merkmale</f:translate></label><div class="feperson col-12 col-sm-9">{user.sonstigemerkmale}</div></f:if>			
 								<f:if condition="{user.hauptzielgruppen}"><label class="col-12 col-sm-3 px-0"><f:translate key="tx_feuserext_domain_model_user.zielgruppen" extensionName="femanagerextended">Zielgruppen</f:translate></label><div class="feperson col-12 col-sm-9">{user.hauptzielgruppen}</div></f:if>
 								<f:if condition="{user.gesellschaftsform}"><label class="col-12 col-sm-3 px-0"><f:translate key="tx_feuserext_domain_model_user.gesellschaftsform" extensionName="femanagerextended">Gesellschaftsform</f:translate></label><div class="feperson col-12 col-sm-9">{user.gesellschaftsform}</div></f:if>
