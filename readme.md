@@ -1,7 +1,7 @@
 # Example addon extension to TYPO3 extension femanager
 
 # Changelog
-- 4.0.1 delet Dozenten in Show.html, extend local.conf and Controller
+- 4.0.1 deleted Dozenten in Show.html, extended ext_localconf.php for using the new UserController
 - 4.0.0 Extended for wbh
 - 3.1.1 Update dev setup
 - 3.1.0 Add Example for using objects
