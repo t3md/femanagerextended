@@ -17,6 +17,9 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\In2code\Femanager\Domain\Validato
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\In2code\Femanager\Domain\Validator\ClientsideValidator::class] = [
     'className' => \In2code\Femanagerextended\Domain\Validator\CustomClientsideValidator::class,
 ];
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\In2code\Femanager\Controller\UserController::class] = [
+    'className' => \In2code\Femanagerextended\Controller\UserController::class,
+];
 
 /**
  * Override femanager User model with own
